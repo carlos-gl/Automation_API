@@ -1,5 +1,4 @@
 package payloads.model;
-
 public class ProductsModel {
 
   private String title;

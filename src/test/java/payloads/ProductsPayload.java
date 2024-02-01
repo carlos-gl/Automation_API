@@ -1,7 +1,6 @@
 package payloads;
 
 import com.google.gson.Gson;
-import payloads.model.LoginModel;
 import payloads.model.ProductsModel;
 
 public class ProductsPayload {

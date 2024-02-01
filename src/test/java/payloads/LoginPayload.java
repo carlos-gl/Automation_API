@@ -8,5 +8,4 @@ public class LoginPayload {
     LoginModel login = new LoginModel(username, password);
     return new Gson().toJson(login);
   }
-
 }

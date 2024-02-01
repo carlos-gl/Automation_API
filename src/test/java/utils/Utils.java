@@ -13,8 +13,4 @@ public class Utils {
     return baseUrl;
   }
 
-  public static String getEnv() {
-    return System.getProperty("env").toUpperCase(Locale.ROOT);
-  }
-
 }
