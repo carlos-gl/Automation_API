@@ -6,7 +6,7 @@ import org.junit.jupiter.api.Test;
 import utils.Utils;
 
 public class BaseTest {
-  RequestBaseTest requestBaseTest = new RequestBaseTest();
+  RequestBase requestBaseTest = new RequestBase();
 
   @BeforeAll
   public static void setUp() {

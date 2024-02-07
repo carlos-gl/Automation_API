@@ -7,10 +7,10 @@ import tests.base.BaseTest;
 
 public class UserTest extends BaseTest {
 
-  RequestUserTest requestUserTest = new RequestUserTest();
+  RequestUser requestUserTest = new RequestUser();
 
   @Test
-  public void returnStatusCode200() throws Exception {
+  public void returnStatusCode200() {
     requestUserTest.getUser()
             .then()
             .statusCode(HttpStatus.SC_OK);

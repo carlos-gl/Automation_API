@@ -7,17 +7,17 @@ import tests.base.BaseTest;
 
 public class LoginTest extends BaseTest {
 
-  RequestLoginTest loginRequest = new RequestLoginTest();
+  RequestLogin loginRequest = new RequestLogin();
 
   @Test
-  public void SucessLogin() throws Exception {
+  public void SucessLogin() {
     loginRequest.login("kminchelle", "0lelplR" )
             .then()
             .statusCode(HttpStatus.SC_CREATED);
   }
 
   @Test
-  public void LoginWithInvalidUsername() throws Exception {
+  public void LoginWithInvalidUsername() {
     loginRequest.login("invalidUser", "0lelplR")
             .then()
             .statusCode(HttpStatus.SC_BAD_REQUEST)
@@ -25,7 +25,7 @@ public class LoginTest extends BaseTest {
   }
 
   @Test
-  public void LoginWithInvalidPassword() throws Exception {
+  public void LoginWithInvalidPassword() {
     loginRequest.login("kminchelle", "invalidPass")
             .then()
             .statusCode(HttpStatus.SC_BAD_REQUEST)

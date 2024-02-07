@@ -3,11 +3,11 @@ package tests.products;
 import io.restassured.http.ContentType;
 import io.restassured.response.Response;
 import payloads.ProductsPayload;
-import tests.login.RequestLoginTest;
+import tests.login.RequestLogin;
 
 import static io.restassured.RestAssured.given;
 
-public class RequestProductTest extends RequestLoginTest {
+public class RequestProduct extends RequestLogin {
 
   private final String PATH_AUTH_PRODUCTS = "/auth/products";
   private final String PATH_PRODUCTS = "/products";

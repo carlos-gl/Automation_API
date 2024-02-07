@@ -6,7 +6,7 @@ import payloads.LoginPayload;
 
 import static io.restassured.RestAssured.*;
 
-public class RequestLoginTest {
+public class RequestLogin {
 
   private final String PATH_LOGIN = "/auth/login";
   public Response login(String username, String password) {

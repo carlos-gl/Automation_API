@@ -1,17 +1,18 @@
-package tests.base;
+package tests.user;
 
 import io.restassured.http.ContentType;
 import io.restassured.response.Response;
 
 import static io.restassured.RestAssured.*;
 
-public class RequestBaseTest {
+public class RequestUser {
 
-  public Response getStatusApplication(){
+  private final String PATH_USERS = "/users";
+  public Response getUser(){
     return given()
             .contentType(ContentType.JSON)
             .when()
-            .get("/test")
+            .get(PATH_USERS)
             .then()
             .extract().response();
   }
